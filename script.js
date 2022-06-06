@@ -22,10 +22,10 @@
     });
 
 
-    $( ".buttonDarkTheme" ).click(function() {
-        $( "body" ).removeClass( "brightTheme" ).addClass( "darkTheme" );
+    jQuery(".buttonDarkTheme" ).click(function() {
+        jQuery( "body" ).removeClass( "brightTheme" ).addClass( "darkTheme" );
     });
 
     jQuery( ".buttonBrightTheme" ).click(function() {
-        $( "body" ).removeClass( "darkTheme" ).addClass( "brightTheme" );
+        jQuery( "body" ).removeClass( "darkTheme" ).addClass( "brightTheme" );
     });
