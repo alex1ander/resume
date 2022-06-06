@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+}
+body{
+    background: #302e2e;
+}
+.forImg{
+    width: 300px;
+    height: 400px;
+}
+
+h1,h2,h3,h4,h5,h6,p,div,li,span{
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	margin: 50px auto;
+	width: fit-content;
+    padding: 10px;
+}
+.content{
+	margin: 50px auto;
+    height: auto;
+    width: 60%;
+    padding-bottom: 100px;
+}
+.content > div{
+    margin-top: 60px;
+}
+
+.myself{
+	display: grid; 
+  	grid-template-columns: auto 1fr 1fr; 
+  	grid-template-rows: auto 1fr; 
+  	gap: 0px 0px; 
+  	grid-template-areas: 
+    "photoplace name-block name-block"
+    "photoplace shortInfo shortInfo";
+    background: linear-gradient(#010101,#043970);
+    /* background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3); */
+}
+
+.skills{
+    background: linear-gradient(#043970,#a58585);
+    height: 100%;
+    width: -webkit-fill-available;
+    margin-right: 60px;
+    height: 280px;
+}
+.rightBlock{
+    background: linear-gradient(#043970,#a58585);
+    height: 100%;
+}
+
+.bottomBlocks{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.placeForButtons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+    height: 240px;
+    margin: 20px;
+}
+.btn{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.neonShadow{
+    box-shadow: 0px 0px 12px 12px #802cff;
+}
+
+.photoplace { 
+	grid-area: photoplace;
+
+	margin: 40px;
+    padding: 40px;
+    border: 1px solid white;
+ }
+.name-block { grid-area: name-block; }
+.shortInfo { grid-area: shortInfo; }
+
+
+.name-block{
+	width: 100%;
+}
+.photo{
+	max-height: 450px;
+	display: block;
+	cursor: pointer;
+}
+
+.infoList{
+	display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+.placeForText{
+    /* width: 100%; */
+}
+.lineInfo{
+	margin: 10px;
+}
+.lineInfo span{
+	min-width: 200px;
+    display: inline-block;
+}
+.firstCol{
+	min-width: 200px;
+}
+.skillsTitle{
+    margin: 3%;
+}
+.skills ul{
+	margin: 0 5%;
+}
+.skills ul li{
+		margin-top: 10px;
+}
+h2{
+	text-align: center;
+}
+
+
+.back_to_top-show{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background: blue;
+    opacity: 0.5;
+    background-image: url(images/btnapp.png);
+    background-size: 100%; 
+    cursor: pointer;
+}
+
+.back_to_top-show:hover{
+    opacity: 1;
+}
+
+
+
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #802CFF;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .content{
+    	width: 80%;
+    }
+    .myself{
+    	display: flex;
+    	flex-direction: column;
+    }
+    .myself div{
+    	min-width: inherit;
+        display: table;
+        
+    }
+    .photoplace{
+    	margin: 0;
+    	padding: 0;
+    }
+    .photo{
+    	margin: auto;
+    }
+    .infoList{
+    	margin: 0;
+    }
+
+  }
+
+
+  .lineInfo:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #a66cff; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+    margin-top: 2px;
+    }
+    .lineInfo{
+        position: relative;
+        cursor: pointer;
+        line-height: 1; /*задаём высоту строки*/
+        text-decoration: none; /*убираем подчёркивание*/
+    }
+    .lineInfo:hover:after,
+    .lineInfo:focus:after {
+        width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    }
+
+    @media screen and (max-width: 900px) {
+            .bottomBlocks{
+                display: block;
+            }
+            .bottomBlocks > div{
+                margin-bottom: 60px;
+            }
+            .skills{
+                margin:0;
+                background:linear-gradient(#043970,#57607b)
+            }
+            .rightBlock{
+                background:linear-gradient(#57607b 60%,#a58585);
+            }
+            .placeForButtons{
+                justify-content: space-around;
+                flex-wrap: unset;
+                width: auto;
+                height: auto;
+                padding: 10px;
+                margin: auto;
+            }
+    }
+
+    @media screen and (max-width: 600px) {
+        .placeForButtons{
+            flex-wrap: wrap;
+        }
+    }
