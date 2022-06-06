@@ -1,4 +1,8 @@
 
+body.darkTheme{
+    background: #302e2e;
+}
+
 .darkTheme .myself{
     background: linear-gradient(#010101,#043970);
 }
@@ -28,10 +32,30 @@ body.darkTheme::-webkit-scrollbar-thumb {
 }
 
 
+.buttonDarkTheme{
+    border: 1px solid #802CFF;
+    padding: 10px;
+    position: fixed;
+    top: 0px; left: 0px;
+}
+
+.darkTheme .buttonDarkTheme{
+    background-color: #802CFF;
+}
+
+.buttonDarkTheme:hover{
+    background-color: #802CFF;
+}
+.exampleDark{
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(#010101,#043970,#a58585);
+}
+
 @media screen and (max-width: 900px) {
 
     .darkTheme .skills{
-        background:linear-gradient(#043970,#57607b)
+        background:linear-gradient(#043970,#57607b);
     }
     .darkTheme .rightBlock{
         background:linear-gradient(#57607b 60%,#a58585);
