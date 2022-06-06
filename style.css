@@ -40,7 +40,6 @@ h1{
   	grid-template-areas: 
     "photoplace name-block name-block"
     "photoplace shortInfo shortInfo";
-    /* background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3); */
 }
 
 .skills{
