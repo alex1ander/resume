@@ -40,19 +40,17 @@ h1{
   	grid-template-areas: 
     "photoplace name-block name-block"
     "photoplace shortInfo shortInfo";
-    background: linear-gradient(#010101,#043970);
     /* background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3); */
 }
 
 .skills{
-    background: linear-gradient(#043970,#a58585);
+    
     height: 100%;
     width: -webkit-fill-available;
     margin-right: 60px;
     height: 280px;
 }
 .rightBlock{
-    background: linear-gradient(#043970,#a58585);
     height: 100%;
 }
 
@@ -76,16 +74,10 @@ h1{
     margin: 10px;
 }
 
-.neonShadow{
-    box-shadow: 0px 0px 12px 12px #802cff;
-}
-
 .photoplace { 
 	grid-area: photoplace;
-
 	margin: 40px;
     padding: 40px;
-    border: 1px solid white;
  }
 .name-block { grid-area: name-block; }
 .shortInfo { grid-area: shortInfo; }
@@ -132,24 +124,6 @@ h2{
 }
 
 
-.back_to_top-show{
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    background: blue;
-    opacity: 0.5;
-    background-image: url(images/btnapp.png);
-    background-size: 100%; 
-    cursor: pointer;
-}
-
-.back_to_top-show:hover{
-    opacity: 1;
-}
-
 
 
 
@@ -163,32 +137,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media screen and (max-width: 1200px) {
-    .content{
-    	width: 80%;
-    }
-    .myself{
-    	display: flex;
-    	flex-direction: column;
-    }
-    .myself div{
-    	min-width: inherit;
-        display: table;
-        
-    }
-    .photoplace{
-    	margin: 0;
-    	padding: 0;
-    }
-    .photo{
-    	margin: auto;
-    }
-    .infoList{
-    	margin: 0;
-    }
-
-  }
-
 
   .lineInfo:after {
 	display: block;
@@ -196,7 +144,6 @@ body::-webkit-scrollbar-thumb {
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
 	height: 2px; /*задаём ширину линии*/
-	background-color: #a66cff; /*задаём цвет линии*/
 	content: "";
 	transition: width 0.3s ease-out; /*задаём время анимации*/
     margin-top: 2px;
@@ -212,6 +159,33 @@ body::-webkit-scrollbar-thumb {
         width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
     }
 
+    @media screen and (max-width: 1200px) {
+        .content{
+            width: 80%;
+        }
+        .myself{
+            display: flex;
+            flex-direction: column;
+        }
+        .myself div{
+            min-width: inherit;
+            display: table;
+            
+        }
+        .photoplace{
+            margin: 0;
+            padding: 0;
+        }
+        .photo{
+            margin: auto;
+        }
+        .infoList{
+            margin: 0;
+        }
+    
+      }
+
+
     @media screen and (max-width: 900px) {
             .bottomBlocks{
                 display: block;
@@ -221,10 +195,7 @@ body::-webkit-scrollbar-thumb {
             }
             .skills{
                 margin:0;
-                background:linear-gradient(#043970,#57607b)
-            }
-            .rightBlock{
-                background:linear-gradient(#57607b 60%,#a58585);
+                
             }
             .placeForButtons{
                 justify-content: space-around;
