@@ -3,10 +3,10 @@
         cursor: pointer;
     }
     .btn a{
-        /* margin: auto; */
+    
     }
    .placeForButtons div a .fa-brands {
-        font-size: 100px;
+        font-size: 6em;
         color: #222;
     }
    .placeForButtons div::before {
@@ -14,7 +14,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        font-size: 100px;
+        font-size: 6em;
         height: 0;
         overflow: hidden;
         transition: 0.5s ease-in-out;
