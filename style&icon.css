@@ -3,7 +3,7 @@
         cursor: pointer;
     }
     .btn a{
-        margin: auto;
+        /* margin: auto; */
     }
    .placeForButtons div a .fa-brands {
         font-size: 100px;
