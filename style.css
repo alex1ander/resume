@@ -60,6 +60,7 @@ h1{
 .placeForButtons{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 240px;
     height: 240px;
     margin: 20px;

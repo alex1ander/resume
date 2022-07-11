@@ -5,11 +5,11 @@
     .btn a{
     
     }
-   .placeForButtons a .fa-brands {
+    .placeForButtons a .fa-brands {
         font-size: 6em;
         color: #222;
     }
-   .placeForButtons a::before {
+    .placeForButtons a::before {
         font-family: "FontAwesome";
         position: absolute;
         top: 0;
@@ -20,19 +20,15 @@
         transition: 0.5s ease-in-out;
     }
 
-   .placeForButtons a:nth-child(1)::before {
+    .placeForButtons a:nth-child(1)::before {
         content: "\f16d";
         color: #dc2743;
     }
-   .placeForButtons a:nth-child(2)::before {
+    .placeForButtons a:nth-child(2)::before {
         content: "\f2c6";
         color: #1DA1F2;
     }
-   .placeForButtons a:nth-child(3)::before {
-        content: "\f099";
-        color: #1DA1F2;
-    }
-    .placeForButtons a:nth-child(4)::before {
+    .placeForButtons a:nth-child(3)::before {
         content: "\f09b";
         color: #fff;
     }
